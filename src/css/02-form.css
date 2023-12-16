@@ -1,35 +1,42 @@
-/* Reset styles */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-p:last-child {
-  margin-bottom: 0;
+.feedback-form {
+  margin-top: 40px;
+  width: 480px;
+  font-family: 'Montserrat';
+  font-size: 16;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.feedback-form > label {
+  width: 100%;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
 }
 
-a {
-  color: currentColor;
-  text-decoration: none;
+.feedback-form input,
+.feedback-form textarea {
+  width: 360px;
+  height: 40px;
+  font-family: inherit;
+  padding: 8px;
 }
 
-button {
-  cursor: pointer;
+.feedback-form textarea {
+  height: 80px;
+  resize: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.feedback-form button {
+  width: 95px;
+  height: 40px;
+  background-color: #4e75ff;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-family: inherit;
 }
