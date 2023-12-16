@@ -11,7 +11,7 @@ try {
     }
   });
 } catch (error) {
-  console.log(error.message);
+  //   console.log(error.message);
 }
 formEl.addEventListener('input', evt => {
   const formData = new FormData(formEl);
